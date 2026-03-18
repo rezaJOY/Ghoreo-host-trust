@@ -171,7 +171,7 @@
             border: 1px solid #E0E6EC;
         }
 
-        /* Credibility bar */
+        /* Credibility bar (updated with reviews) */
         .credibility-bar {
             background: white;
             padding: 20px;
@@ -197,7 +197,7 @@
             font-size: 18px;
         }
 
-        /* Features Grid */
+        /* Features Grid – now 4 cards */
         .features-grid {
             display: grid;
             grid-template-columns: 1fr;
@@ -210,7 +210,7 @@
         }
         @media (min-width: 1024px) {
             .features-grid {
-                grid-template-columns: repeat(3, 1fr);
+                grid-template-columns: repeat(4, 1fr);
             }
         }
         .feature-card {
@@ -454,44 +454,34 @@
             </div>
         </div>
 
-        <!-- Credibility bar -->
+        <!-- Credibility bar (updated with reviews) -->
         <div class="credibility-bar">
+            <span class="cred-metric"><i class="fas fa-star"></i> 70+ reviews across platforms</span>
             <span class="cred-metric"><i class="fas fa-home"></i> We host too</span>
             <span class="cred-metric"><i class="fas fa-calendar-check"></i> 600+ stays managed</span>
-            <span class="cred-metric"><i class="fas fa-clock"></i> Learning every day</span>
         </div>
 
-        <!-- Features Grid -->
+        <!-- Features Grid – updated with 4 core features -->
         <div class="features-grid">
             <div class="feature-card">
-                <i class="fas fa-clock feature-icon"></i>
-                <div class="feature-title">Automated check in</div>
-                <div class="feature-desc">Guests get everything automatically. You sleep through the night.</div>
+                <i class="fas fa-calendar-plus feature-icon"></i>
+                <div class="feature-title">Custom booking now</div>
+                <div class="feature-desc">Create direct bookings for walk ins and WhatsApp guests in seconds.</div>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-gavel feature-icon"></i>
+                <div class="feature-title">Dispute resolution</div>
+                <div class="feature-desc">Fair, fast mediation between hosts and guests when issues arise.</div>
             </div>
             <div class="feature-card">
                 <i class="fas fa-bolt feature-icon"></i>
-                <div class="feature-title">Fast payouts</div>
-                <div class="feature-desc">Money in your account the day after checkout. No waiting.</div>
+                <div class="feature-title">Money directly to you</div>
+                <div class="feature-desc">Funds go straight into your account. No holding, no delays.</div>
             </div>
             <div class="feature-card">
-                <i class="fas fa-shield-alt feature-icon"></i>
-                <div class="feature-title">Guest verification</div>
-                <div class="feature-desc">Know who's staying. Reduce risk. Host with confidence.</div>
-            </div>
-            <div class="feature-card">
-                <i class="fas fa-calendar-alt feature-icon"></i>
-                <div class="feature-title">Calendar sync</div>
-                <div class="feature-desc">Airbnb, Booking.com, all in one place. No double bookings.</div>
-            </div>
-            <div class="feature-card">
-                <i class="fas fa-file-signature feature-icon"></i>
-                <div class="feature-title">Clear rules</div>
-                <div class="feature-desc">Set expectations. Guests agree before they book.</div>
-            </div>
-            <div class="feature-card">
-                <i class="fas fa-headset feature-icon"></i>
-                <div class="feature-title">Real support</div>
-                <div class="feature-desc">A human, not a bot, when you need help.</div>
+                <i class="fas fa-sitemap feature-icon"></i>
+                <div class="feature-title">Structured workflow</div>
+                <div class="feature-desc">Organise direct, walk in, and WhatsApp customers in one simple flow.</div>
             </div>
         </div>
 
