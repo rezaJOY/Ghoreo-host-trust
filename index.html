@@ -17,13 +17,13 @@
 
         body {
             font-family: 'Inter', sans-serif;
-            background-color: #f2f5f9;
-            color: #0b2c3b;
+            background-color: #F7F7F7;
+            color: #003C32;
             line-height: 1.5;
             min-height: 100vh;
             display: flex;
             flex-direction: column;
-            padding-bottom: 120px; /* space for sticky footer */
+            padding-bottom: 120px;
             position: relative;
         }
 
@@ -52,53 +52,56 @@
             font-weight: 700;
             text-transform: uppercase;
             letter-spacing: 0.5px;
-            color: #1e7b7b;
+            color: #003C32;
         }
         .step-text {
             font-size: 14px;
-            color: #678f9c;
+            color: #5A6B7A;
             font-weight: 500;
         }
 
         /* Founder intro chip */
         .intro-chip {
-            background-color: #f4f9fe;
-            padding: 24px 20px;
-            border-radius: 24px;
+            background-color: #ffffff;
+            padding: 28px 20px;
+            border-radius: 28px;
             display: flex;
             flex-direction: column;
             align-items: center;
             text-align: center;
             gap: 16px;
-            box-shadow: 0 4px 12px rgba(0,20,30,0.05);
+            box-shadow: 0 4px 16px rgba(0,60,50,0.06);
+            border: 1px solid #E0E6EC;
         }
         .intro-text {
-            font-size: 15px;
-            font-weight: 500;
+            font-size: 16px;
+            font-weight: 400;
             line-height: 1.6;
+            color: #003C32;
+            max-width: 600px;
         }
         .verified-badge {
             display: inline-flex;
             align-items: center;
             gap: 8px;
-            background: rgba(30,123,123,0.08);
-            color: #1e7b7b;
-            font-weight: 600;
-            font-size: 13px;
-            padding: 8px 16px;
-            border-radius: 30px;
+            background: rgba(0,60,50,0.06);
+            color: #003C32;
+            font-weight: 500;
+            font-size: 14px;
+            padding: 8px 18px;
+            border-radius: 40px;
         }
 
         /* VC Card */
         .vc-card {
             background: white;
-            border-radius: 24px;
+            border-radius: 28px;
             overflow: hidden;
-            box-shadow: 0 12px 24px -8px rgba(0,20,30,0.12);
-            border-top: 4px solid #1e7b7b;
+            box-shadow: 0 12px 28px -8px rgba(0,60,50,0.1);
+            border-top: 4px solid #003C32;
         }
         .vc-header {
-            background: #e8eef3;
+            background: #F0F4F8;
             padding: 24px 16px;
             display: flex;
             flex-direction: column;
@@ -107,204 +110,184 @@
             text-align: center;
         }
         .vc-placeholder-icon {
-            width: 48px;
-            height: 48px;
+            width: 56px;
+            height: 56px;
             background: white;
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.04);
         }
         .vc-placeholder-text {
             font-size: 12px;
-            color: #678f9c;
+            color: #5A6B7A;
         }
         .vc-body {
-            padding: 24px 20px;
+            padding: 28px 24px;
             display: flex;
             flex-direction: column;
             gap: 20px;
         }
         .vc-name {
-            font-size: 18px;
-            font-weight: 700;
+            font-size: 20px;
+            font-weight: 600;
             line-height: 1.3;
+            color: #003C32;
         }
         .vc-title {
-            font-size: 14px;
-            color: #678f9c;
-            font-weight: 500;
+            font-size: 15px;
+            color: #5A6B7A;
+            font-weight: 400;
             margin-top: 4px;
         }
         .vc-quote {
-            font-size: 15px;
+            font-size: 16px;
             font-style: italic;
-            border-left: 4px solid rgba(30,123,123,0.2);
-            padding-left: 16px;
-            color: #0b2c3b;
+            border-left: 4px solid rgba(0,60,50,0.15);
+            padding-left: 18px;
+            color: #003C32;
+            line-height: 1.6;
         }
         .vc-verification {
             display: inline-flex;
             align-items: center;
             gap: 8px;
-            background: #f4f9fe;
-            color: #1e7b7b;
-            font-weight: 600;
-            font-size: 12px;
-            padding: 8px 14px;
-            border-radius: 30px;
+            background: #F0F7F5;
+            color: #003C32;
+            font-weight: 500;
+            font-size: 13px;
+            padding: 8px 16px;
+            border-radius: 40px;
             width: fit-content;
         }
         .vc-context {
-            background: #fafbfc;
-            padding: 16px;
-            border-radius: 16px;
-            font-size: 14px;
-            color: #476c7c;
-            line-height: 1.5;
+            background: #FAFCFE;
+            padding: 18px;
+            border-radius: 20px;
+            font-size: 15px;
+            color: #2A4A4A;
+            line-height: 1.6;
+            border: 1px solid #E0E6EC;
         }
 
-        /* Aggregate bar */
-        .aggregate-bar {
+        /* Credibility bar */
+        .credibility-bar {
             background: white;
-            padding: 18px 20px;
-            border-radius: 24px;
-            box-shadow: 0 12px 24px -8px rgba(0,20,30,0.12);
+            padding: 20px;
+            border-radius: 28px;
+            box-shadow: 0 12px 24px -8px rgba(0,60,50,0.1);
             display: flex;
             flex-wrap: wrap;
             align-items: center;
-            justify-content: space-between;
-            gap: 12px;
+            justify-content: center;
+            gap: 24px;
+            border: 1px solid #E0E6EC;
         }
-        .agg-stars {
+        .cred-metric {
             display: flex;
             align-items: center;
-            gap: 8px;
-            font-weight: 700;
+            gap: 10px;
+            font-weight: 500;
             font-size: 15px;
+            color: #003C32;
         }
-        .stars {
-            color: #fbbf24;
-            letter-spacing: 2px;
-        }
-        .agg-meta {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-            color: #678f9c;
-            font-size: 13px;
-        }
-        .platform-icons {
-            display: flex;
-            gap: 8px;
+        .cred-metric i {
+            color: #003C32;
+            font-size: 18px;
         }
 
-        /* Reviews grid */
-        .reviews-grid {
+        /* Features Grid */
+        .features-grid {
             display: grid;
             grid-template-columns: 1fr;
-            gap: 20px;
+            gap: 16px;
         }
         @media (min-width: 640px) {
-            .reviews-grid {
+            .features-grid {
                 grid-template-columns: repeat(2, 1fr);
             }
         }
-        .review-card {
+        @media (min-width: 1024px) {
+            .features-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+        .feature-card {
             background: white;
             border-radius: 24px;
-            padding: 20px;
-            box-shadow: 0 12px 24px -8px rgba(0,20,30,0.12);
+            padding: 24px 20px;
+            box-shadow: 0 8px 20px -6px rgba(0,60,50,0.08);
             display: flex;
             flex-direction: column;
             gap: 12px;
+            border: 1px solid #E0E6EC;
+            transition: all 0.2s ease;
+            height: 100%;
         }
-        .review-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
+        .feature-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 16px 28px -8px rgba(0,60,50,0.15);
         }
-        .reviewer-info {
-            display: flex;
-            flex-direction: column;
-            gap: 2px;
+        .feature-icon {
+            font-size: 28px;
+            color: #003C32;
+            margin-bottom: 8px;
         }
-        .reviewer-name {
-            font-weight: 700;
-            font-size: 15px;
-        }
-        .review-platform {
-            display: flex;
-            align-items: center;
-            gap: 4px;
-            font-size: 12px;
-            color: #678f9c;
-        }
-        .review-date {
-            font-size: 12px;
-            color: #678f9c;
-        }
-        .review-quote {
-            font-size: 14px;
-            line-height: 1.5;
-        }
-        .review-badge {
-            display: inline-flex;
-            align-items: center;
-            gap: 6px;
-            background: #f4f9fe;
-            color: #1e7b7b;
-            font-size: 11px;
+        .feature-title {
+            font-size: 18px;
             font-weight: 600;
-            padding: 6px 12px;
-            border-radius: 20px;
-            width: fit-content;
+            color: #003C32;
+        }
+        .feature-desc {
+            font-size: 14px;
+            color: #4A5C68;
+            line-height: 1.5;
         }
 
         /* Story section */
         .story-section {
             background: white;
-            border-radius: 24px;
-            padding: 28px 20px;
-            box-shadow: 0 12px 24px -8px rgba(0,20,30,0.12);
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
+            border-radius: 28px;
+            padding: 28px 24px;
+            box-shadow: 0 12px 24px -8px rgba(0,60,50,0.1);
+            border: 1px solid #E0E6EC;
         }
         .story-title {
             font-size: 18px;
-            font-weight: 700;
-            text-align: center;
+            font-weight: 600;
+            margin-bottom: 16px;
+            color: #003C32;
         }
         .story-text {
-            font-size: 14px;
-            color: #476c7c;
+            font-size: 15px;
+            color: #4A5C68;
             line-height: 1.6;
+            margin-bottom: 20px;
         }
-        .story-quote-block {
-            background: #f4f9fe;
+        .story-quote {
+            background: #F5FAF8;
             padding: 20px;
             border-radius: 20px;
             font-style: italic;
-            border-left: 4px solid #1e7b7b;
+            border-left: 4px solid #003C32;
+            color: #2A4A4A;
+            margin-bottom: 20px;
         }
         .timeline-items {
             display: flex;
             flex-wrap: wrap;
-            gap: 16px;
-            justify-content: center;
-            margin-top: 8px;
+            gap: 12px;
         }
         .timeline-item {
-            display: flex;
+            background: #F0F4F8;
+            padding: 8px 16px;
+            border-radius: 40px;
+            font-size: 14px;
+            color: #003C32;
+            display: inline-flex;
             align-items: center;
-            gap: 8px;
-            background: #f2f5f9;
-            padding: 10px 16px;
-            border-radius: 30px;
-            font-weight: 600;
-            font-size: 13px;
+            gap: 6px;
         }
 
         /* Bridge + chips */
@@ -315,26 +298,31 @@
             gap: 20px;
         }
         .bridge-text {
-            font-size: 15px;
-            font-weight: 500;
+            font-size: 16px;
+            font-weight: 400;
             line-height: 1.6;
+            color: #2A4A4A;
+            max-width: 700px;
+            margin: 0 auto;
         }
         .feature-chips {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
-            gap: 10px;
+            gap: 12px;
         }
         .chip {
-            background: #e8f3f3;
-            color: #1e7b7b;
-            padding: 8px 16px;
-            border-radius: 30px;
-            font-size: 13px;
-            font-weight: 600;
+            background: #ffffff;
+            color: #003C32;
+            padding: 10px 20px;
+            border-radius: 40px;
+            font-size: 14px;
+            font-weight: 500;
             display: inline-flex;
             align-items: center;
             gap: 8px;
+            border: 1px solid #003C32;
+            box-shadow: 0 2px 6px rgba(0,60,50,0.05);
         }
 
         /* Sticky CTA footer */
@@ -344,55 +332,79 @@
             left: 0;
             width: 100%;
             background: rgba(255,255,255,0.98);
-            backdrop-filter: blur(10px);
-            -webkit-backdrop-filter: blur(10px);
-            border-top: 1px solid rgba(0,0,0,0.05);
-            padding: 12px 16px 20px;
-            box-shadow: 0 -4px 20px rgba(0,0,0,0.03);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border-top: 1px solid #E0E6EC;
+            padding: 16px 16px 24px;
+            box-shadow: 0 -4px 20px rgba(0,60,50,0.05);
             z-index: 100;
         }
         .footer-content {
-            max-width: 1200px;
+            max-width: 800px;
             margin: 0 auto;
             display: flex;
             flex-direction: column;
             align-items: center;
-            gap: 12px;
+            gap: 14px;
         }
         .urgency-badge {
-            background: #ffe9e0;
-            color: #b13e3e;
-            padding: 6px 14px;
-            border-radius: 30px;
-            font-size: 12px;
-            font-weight: 700;
+            background: #FFF1E5;
+            color: #B85C3A;
+            padding: 8px 16px;
+            border-radius: 40px;
+            font-size: 13px;
+            font-weight: 600;
             display: inline-flex;
             align-items: center;
             gap: 6px;
         }
         .cta-button {
-            background: linear-gradient(145deg, #175a6b, #0f495a);
+            background: #003C32;
             color: white;
             border: none;
-            padding: 16px 24px;
-            border-radius: 30px;
-            font-size: 16px;
-            font-weight: 700;
+            padding: 16px 32px;
+            border-radius: 40px;
+            font-size: 17px;
+            font-weight: 500;
             width: 100%;
-            max-width: 400px;
+            max-width: 380px;
             cursor: pointer;
             display: flex;
             align-items: center;
             justify-content: center;
-            gap: 8px;
-            box-shadow: 0 8px 18px -6px #0f495a70;
+            gap: 10px;
+            box-shadow: 0 8px 20px -6px #003C32;
+            text-decoration: none;
+            transition: all 0.2s;
+        }
+        .cta-button:hover {
+            background: #002b24;
+            transform: scale(1.02);
         }
         .footer-note {
-            font-size: 11px;
-            color: #678f9c;
+            font-size: 12px;
+            color: #5A6B7A;
             display: flex;
             align-items: center;
             gap: 6px;
+        }
+
+        /* Mobile optimization */
+        @media (max-width: 380px) {
+            .feature-card {
+                padding: 20px 16px;
+            }
+            .feature-title {
+                font-size: 17px;
+            }
+            .credibility-bar {
+                gap: 16px;
+                padding: 16px;
+            }
+            .cta-button {
+                padding: 14px 20px;
+                font-size: 16px;
+            }
         }
     </style>
 </head>
@@ -408,170 +420,101 @@
 
         <!-- Founder intro -->
         <div class="intro-chip">
-            <i class="fas fa-users" style="font-size: 24px; color: #1e7b7b;"></i>
+            <i class="fas fa-users" style="font-size: 26px; color: #003C32;"></i>
             <div class="intro-text">
-                “We hosted in Dhaka. Learned the hard way where things break, delays, miscommunication, hidden fees. So we paused, listened, and rebuilt.
-
-- Your fellow hosts”
+                We run apartments in Dhaka, just like you. We have dealt with late payments, miscommunications, and the chaos that comes with hosting. So we built something better.
             </div>
             <div class="verified-badge">
-                <i class="fas fa-check-circle"></i> Verified host experience
+                <i class="fas fa-check-circle"></i> Hosts like you
             </div>
         </div>
 
-        <!-- VC Endorsement -->
+        <!-- VC Endorsement (Jamal Uddin Ahmed, SAARC Development Fund) -->
         <div class="vc-card">
             <div class="vc-header">
                 <div class="vc-placeholder-icon">
-                    <i class="fas fa-user-graduate" style="color: #678f9c;"></i>
+                    <i class="fas fa-globe-asia" style="color: #003C32; font-size: 28px;"></i>
                 </div>
-                <div class="vc-placeholder-text">Photo placeholder – do not use real image without consent</div>
+                <div class="vc-placeholder-text">Photo placeholder</div>
             </div>
             <div class="vc-body">
                 <div>
-                    <div class="vc-name">Professor Md. Jamal Uddin Bhuiyan</div>
-                    <div class="vc-title">Honourable Vice-Chancellor, Sher-e-Bangla Agricultural University</div>
+                    <div class="vc-name">Jamal Uddin Ahmed</div>
+                    <div class="vc-title">Officer in Charge, SAARC Development Fund · Thimphu</div>
                 </div>
                 <div class="vc-quote">
-                    “GHOREO’s approach aligns with ethical, sustainable hospitality – a model that benefits both hosts and communities.”
+                    “GHOREO's approach reflects the kind of cross border cooperation and ethical hospitality we support at SAARC.”
                 </div>
                 <div class="vc-verification">
-                    <i class="fas fa-lock"></i> Institutional endorsement · Verified March 2025
+                    <i class="fas fa-lock"></i> SAARC affiliated · Feb 2024
                 </div>
                 <div class="vc-context">
-                    Professor Bhuiyan experienced GHOREO firsthand during a university visit to Dhaka. His feedback shaped our commitment to transparency and guest care.
+                    Mr. Ahmed leads regional economic cooperation efforts across South Asia from the SAARC Development Fund headquarters in Bhutan.
                 </div>
             </div>
         </div>
 
-        <!-- Aggregate bar -->
-        <div class="aggregate-bar">
-            <div class="agg-stars">
-                <span class="stars">★★★★★</span> 4.6 · 20+ reviews across platforms
+        <!-- Credibility bar -->
+        <div class="credibility-bar">
+            <span class="cred-metric"><i class="fas fa-home"></i> We host too</span>
+            <span class="cred-metric"><i class="fas fa-calendar-check"></i> 600+ stays managed</span>
+            <span class="cred-metric"><i class="fas fa-clock"></i> Learning every day</span>
+        </div>
+
+        <!-- Features Grid -->
+        <div class="features-grid">
+            <div class="feature-card">
+                <i class="fas fa-clock feature-icon"></i>
+                <div class="feature-title">Automated check in</div>
+                <div class="feature-desc">Guests get everything automatically. You sleep through the night.</div>
             </div>
-            <div class="agg-meta">
-                <div class="platform-icons">
-                    <i class="fas fa-home"></i>
-                    <i class="fas fa-search"></i>
-                    <i class="fab fa-facebook"></i>
-                </div>
-                <span>247 guest interactions</span>
+            <div class="feature-card">
+                <i class="fas fa-bolt feature-icon"></i>
+                <div class="feature-title">Fast payouts</div>
+                <div class="feature-desc">Money in your account the day after checkout. No waiting.</div>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-shield-alt feature-icon"></i>
+                <div class="feature-title">Guest verification</div>
+                <div class="feature-desc">Know who's staying. Reduce risk. Host with confidence.</div>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-calendar-alt feature-icon"></i>
+                <div class="feature-title">Calendar sync</div>
+                <div class="feature-desc">Airbnb, Booking.com, all in one place. No double bookings.</div>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-file-signature feature-icon"></i>
+                <div class="feature-title">Clear rules</div>
+                <div class="feature-desc">Set expectations. Guests agree before they book.</div>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-headset feature-icon"></i>
+                <div class="feature-title">Real support</div>
+                <div class="feature-desc">A human, not a bot, when you need help.</div>
             </div>
         </div>
 
-        <!-- Reviews grid -->
-        <div class="reviews-grid">
-            <!-- Review 1 -->
-            <div class="review-card">
-                <div class="review-header">
-                    <div class="reviewer-info">
-                        <span class="reviewer-name">Jamal</span>
-                        <span class="review-platform"><i class="fas fa-search"></i> Google</span>
-                    </div>
-                    <span class="review-date">9 months ago</span>
-                </div>
-                <div class="review-quote">
-                    “The location of the apartment is at the most happening place of Banasree… The host was very prompt to respond. Cost-wise, good value for money.”
-                </div>
-                <div class="review-badge"><i class="fas fa-globe"></i> Public review</div>
-            </div>
-
-            <!-- Review 2 -->
-            <div class="review-card">
-                <div class="review-header">
-                    <div class="reviewer-info">
-                        <span class="reviewer-name">Julita T. <span style="font-weight:400;">· Italy</span></span>
-                        <span class="review-platform"><i class="fab fa-facebook"></i> Facebook</span>
-                    </div>
-                    <span class="review-date">Jul 30, 2024</span>
-                </div>
-                <div class="review-quote">
-                    “Find the right place to spend moments of your holiday but first of all the host is a very friendly person available at any time always with a smile on his face.”
-                </div>
-                <div class="review-badge"><i class="fas fa-globe"></i> Public review</div>
-            </div>
-
-            <!-- Review 3 -->
-            <div class="review-card">
-                <div class="review-header">
-                    <div class="reviewer-info">
-                        <span class="reviewer-name">Md Rafiqul I.</span>
-                        <span class="review-platform"><i class="fas fa-search"></i> Google</span>
-                    </div>
-                    <span class="review-date">1 year ago</span>
-                </div>
-                <div class="review-quote">
-                    “I stayed there more than ten days. Apartment environment was good and family friendly.”
-                </div>
-                <div class="review-badge"><i class="fas fa-globe"></i> Public review</div>
-            </div>
-
-            <!-- Review 4 -->
-            <div class="review-card">
-                <div class="review-header">
-                    <div class="reviewer-info">
-                        <span class="reviewer-name">zyaan i.</span>
-                        <span class="review-platform"><i class="fas fa-search"></i> Google</span>
-                    </div>
-                    <span class="review-date">1 year ago</span>
-                </div>
-                <div class="review-quote">
-                    “Ghoreo has been a great experience. Top-notch security, well furnished and great host.”
-                </div>
-                <div class="review-badge"><i class="fas fa-globe"></i> Public review</div>
-            </div>
-
-            <!-- Review 5 -->
-            <div class="review-card">
-                <div class="review-header">
-                    <div class="reviewer-info">
-                        <span class="reviewer-name">Fahim K.</span>
-                        <span class="review-platform"><i class="fab fa-facebook"></i> Facebook</span>
-                    </div>
-                    <span class="review-date">Oct 12, 2024</span>
-                </div>
-                <div class="review-quote">
-                    “Hosts are very friendly and very thoughtful amenities.”
-                </div>
-                <div class="review-badge"><i class="fas fa-globe"></i> Public review</div>
-            </div>
-
-            <!-- Review 6 -->
-            <div class="review-card">
-                <div class="review-header">
-                    <div class="reviewer-info">
-                        <span class="reviewer-name">Walid B.A.</span>
-                        <span class="review-platform"><i class="fas fa-search"></i> Google</span>
-                    </div>
-                    <span class="review-date">Feb 1, 2025</span>
-                </div>
-                <div class="review-quote">
-                    “The host was very friendly. It was a very good experience.”
-                </div>
-                <div class="review-badge"><i class="fas fa-globe"></i> Public review</div>
-            </div>
-        </div>
-
-        <!-- "We paused to rebuild" story -->
+        <!-- Story section -->
         <div class="story-section">
-            <div class="story-title">One guest’s experience taught us a hard lesson.</div>
+            <div class="story-title">A mistake that changed everything.</div>
             <div class="story-text">
-                Hasib, a regular client, booked a room but wasn’t told it was a shared apartment. Late-night arrivals by other guests made him feel unsafe, and a miscommunication about checkout led to an unexpected fee.
+                A guest once arrived to find others in what they thought was a private apartment. We had not communicated clearly. It was on us.
             </div>
-            <div class="story-quote-block">
-                “We failed to communicate clearly upfront. That gap is on us. We apologised, refunded the fee, and paused all new listings to rebuild our systems from the ground up. Today, every GHOREO booking includes explicit apartment type, 24/7 host contact, and checkout rules shown before payment.”
+            <div class="story-quote">
+                “We apologised, refunded the fee, and paused. Then we rebuilt. Not just the apartment listings, but the whole system. GHOREO for hosts came from that moment.”
             </div>
             <div class="timeline-items">
-                <span class="timeline-item"><i class="fas fa-pause-circle"></i> We paused new listings</span>
-                <span class="timeline-item"><i class="fas fa-tools"></i> We rebuilt</span>
-                <span class="timeline-item"><i class="fas fa-rocket"></i> GHOREO 2.0</span>
+                <span class="timeline-item"><i class="fas fa-pause-circle"></i> Paused</span>
+                <span class="timeline-item"><i class="fas fa-tools"></i> Rebuilt</span>
+                <span class="timeline-item"><i class="fas fa-rocket"></i> Launched for hosts</span>
             </div>
         </div>
 
         <!-- Bridge + chips -->
         <div class="bridge-section">
             <div class="bridge-text">
-                Every review  good and bad taught us what hosts really need. So we rebuilt GHOREO with crystal‑clear booking terms, instant payouts, guest verification, and zero hidden fees. Because we wanted these features ourselves.
+                We built GHOREO around the things we wished we had as hosts. Simple tools that actually help.
             </div>
             <div class="feature-chips">
                 <span class="chip"><i class="fas fa-coins"></i> Instant payouts</span>
@@ -582,11 +525,11 @@
         </div>
     </div>
 
-      <!-- Sticky CTA Footer (with your form link) -->
+    <!-- Sticky CTA Footer -->
     <div class="sticky-footer">
         <div class="footer-content">
             <div class="urgency-badge">
-                <i class="fas fa-hourglass-half"></i> Early access – 47 spots remaining
+                <i class="fas fa-hourglass-half"></i> Early access · 47 spots
             </div>
             <a href="https://forms.gle/ze1gAAhcYgfkKxPQ6" target="_blank" rel="noopener noreferrer" class="cta-button">
                 Reserve your host profile <i class="fas fa-arrow-right"></i>
@@ -594,8 +537,8 @@
             <div class="footer-note">
                 <i class="fas fa-lock"></i> No payment required · Cancel anytime
             </div>
-            <div class="footer-note" style="font-size:10px;">
-                Secure step before platform launch · Your spot is free.
+            <div class="footer-note" style="font-size:11px;">
+                Secure step · Your spot is free
             </div>
         </div>
     </div>
