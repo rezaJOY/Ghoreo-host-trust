@@ -1,8 +1,7 @@
-
 ```markdown
 # GHOREO – Host Trust Landing Page
 
-A responsive landing page for GHOREO, a platform for hosts in Dhaka to manage bookings, resolve disputes, and receive payouts. The page establishes trust through verified credentials and authentic storytelling.
+A responsive landing page for GHOREO, a platform for hosts in Dhaka to manage bookings, resolve disputes, and receive payouts.
 
 ## Features
 
@@ -70,7 +69,3 @@ Update DNS records to point to your hosting provider. The canonical URL in the H
 
 MIT
 ```
-
-
-Last Updated: 18, March 2026
-Drafter by: Reza
