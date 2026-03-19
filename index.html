@@ -71,7 +71,7 @@
             min-height: 100vh;
             display: flex;
             flex-direction: column;
-            padding-bottom: 200px;
+            padding-bottom: 0;
             position: relative;
         }
 
@@ -576,5 +576,16 @@
             </div>
         </div>
     </div>
+
+    <script>
+        function adjustBodyPadding() {
+            var footer = document.querySelector('.sticky-footer');
+            if (footer) {
+                document.body.style.paddingBottom = (footer.offsetHeight + 16) + 'px';
+            }
+        }
+        document.addEventListener('DOMContentLoaded', adjustBodyPadding);
+        window.addEventListener('resize', adjustBodyPadding);
+    </script>
 </body>
 </html>
